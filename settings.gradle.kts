@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PracticeLib"
 include(":app")
- 
+include(":templib")
