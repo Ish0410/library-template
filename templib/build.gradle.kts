@@ -12,11 +12,11 @@ plugins {
 
 android {
     namespace = "com.example.templib"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 29
-        //targetSdk = 34  deprecated
+        //targetSdk = 35  deprecated
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -29,6 +29,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            isMinifyEnabled = false
+            // TODO: proguard 설정 추가
         }
     }
     compileOptions {
