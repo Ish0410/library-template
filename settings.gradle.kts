@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "PracticeLib"
-include(":app")
+include(":app") // test-application
 include(":templib")
