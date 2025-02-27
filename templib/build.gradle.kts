@@ -55,7 +55,7 @@ dependencies {
 
 baselineProfile {
     filter {
-        include("com.example.templib.**")
+        include("com.example.**")
     }
 }
 
