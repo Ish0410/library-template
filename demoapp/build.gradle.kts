@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.practicelib"
+    namespace = "com.example.demoapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.practicelib"
+        applicationId = "com.example.demoapp"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -36,7 +36,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
