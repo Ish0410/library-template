@@ -32,7 +32,6 @@ android {
         }
         debug {
             isMinifyEnabled = false
-            // TODO: proguard 설정 추가
         }
     }
     compileOptions {
@@ -45,10 +44,7 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
