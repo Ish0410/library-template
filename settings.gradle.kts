@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "PracticeLib"
 include(":demoapp") // test-application
 include(":templib")
+include(":baselineprofile")

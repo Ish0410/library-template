@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.baselineprofile)
 
     // maven central repository
     // alias(libs.plugins.vanniktech.maven.publish)
@@ -45,9 +46,17 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+    baselineProfile(project(":baselineprofile"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+baselineProfile {
+    filter {
+        include("com.example.templib.**")
+    }
 }
 
 // jitpack 전용 코드 (github 저장소 배포 전용)
